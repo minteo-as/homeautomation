@@ -1,0 +1,8 @@
+frontend: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://mosquitto
+serial:
+  port: /dev/ttyACM0
+advanced:
+  log_level: info
