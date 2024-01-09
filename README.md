@@ -1,5 +1,7 @@
 # zigbee2mqtt, Mosquitto and Node-RED in Docker
 
+Remomber to update hostnames in `nginx.conf`
+
 ## Usage
 ### Start
 ```sh
@@ -19,7 +21,7 @@ docker compose up -d
 ```
 
 ## Problems
-### Correct permissions
+### Wrong permissions (this fixes almost all problems)
 ```sh
 docker compose down
 sudo chown -R 1000:1000 zigbee2mqtt
