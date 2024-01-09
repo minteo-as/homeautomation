@@ -1,25 +1,29 @@
 # zigbee2mqtt, Mosquitto and Node-RED in Docker
 
-## Start
+## Usage
+### Start
 ```sh
 docker compose up -d
 ```
 
-## Stop
+### Stop
 ```sh
 docker compose down
 ```
 
-## Update
+### Update
 ```sh
 docker compose down
 docker compose pull
 docker compose up -d
 ```
 
-## Problems with permissions?
+## Problems
+### Correct permissions
 ```sh
+docker compose down
 sudo chown -R 1000:1000 zigbee2mqtt
 sudo chown -R 1000:1000 mosquitto
 sudo chown -R 1000:1000 node-red
+docker compose up -d
 ```
