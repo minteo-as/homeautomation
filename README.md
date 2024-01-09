@@ -1,6 +1,6 @@
 # zigbee2mqtt, Mosquitto and Node-RED in Docker
 
-Remomber to update hostnames in `nginx.conf`
+Remember to update hostnames in `nginx.conf`
 
 ## Usage
 ### Start
