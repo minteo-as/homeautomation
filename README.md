@@ -19,7 +19,7 @@ docker compose up -d
 
 ## Problems with permissions?
 ```sh
-sudo chown -R zigbee2mqtt
-sudo chown -R mosquitto
-sudo chown -R node-red
+sudo chown -R 1000:1000 zigbee2mqtt
+sudo chown -R 1000:1000 mosquitto
+sudo chown -R 1000:1000 node-red
 ```
