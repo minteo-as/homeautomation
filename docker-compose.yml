@@ -1,7 +1,7 @@
 version: "3"
 services:
   mosquitto:
-    image: eclipse-mosquitto:latest
+    image: eclipse-mosquitto:2
     container_name: mosquitto
     restart: unless-stopped
 #    ports:
@@ -14,7 +14,7 @@ services:
     environment:
       - TZ=Europe/Copenhagen
   zigbee2mqtt:
-    image: koenkk/zigbee2mqtt:latest
+    image: koenkk/zigbee2mqtt:2
     container_name: zigbee2mqtt
     restart: unless-stopped
 #    ports:
@@ -29,7 +29,7 @@ services:
     depends_on:
       - mosquitto
   node-red:
-    image: nodered/node-red:latest
+    image: nodered/node-red:4.0
     container_name: node-red
     restart: unless-stopped
 #    ports:
